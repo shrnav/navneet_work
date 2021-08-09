@@ -1,11 +1,14 @@
 package com.pattern;
 
+
 import java.io.File;
+import java.util.List;
 
-public class CSVParser extends TextParser {
+public class CSVParser implements Parser {
 
-    public CSVParser(File file) {
-        System.out.println("Creating CSV parser...");
+    @Override
+    public List<Records> parse() {
+        System.out.println("Parsing CSV and creating the records");
+        return null;
     }
-
 }
